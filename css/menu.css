@@ -1,0 +1,26 @@
+.icon {
+  /* margin-top: :0px; */
+  margin: 10px 50px;
+  /* padding-right: 80px; */
+}
+
+.headtext {
+  font-size: 40px;
+  padding: 0px 100px;
+}
+
+.name {
+  font-size: 40px;
+  padding-left: 240px;
+  padding-right: 100px;
+}
+
+.board {
+  height:1000px;
+  border-radius: 20px;
+  background-color: #fcacac;
+}
+
+.mainname {
+  padding: 50px;
+}

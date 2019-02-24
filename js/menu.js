@@ -1,17 +1,15 @@
 $(()=> {//ページ読み込み時の処理
-  // alert('helloworld')
-  const url = "http://localhost:3000/restaurants"
+  let param = location.search;
+  let tmp = param.split("=");
+  let id = Number(tmp[1]) + 1;
+
+  const url = "http://localhost:3000/restaurants/" + id
   $.getJSON(url).done( (json) => {
     console.log(json);
     for(let i in json){
       let h = '<li>'
-            + '<a href="menu.html?id='+i+'">'
-            + json[i].r_name
-            + '</li>'
-            + '</a>'
-            + '<li>'
-            + json[i].genre
-            + '</li>';
+            + json[i].m_name
+            +'<li>';
 
       $("ul#wrap").append(h);
     }
@@ -20,4 +18,4 @@ $(()=> {//ページ読み込み時の処理
   }).always( () => {
     console.log("実行")
   })
-});
+})
