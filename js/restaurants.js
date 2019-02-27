@@ -3,17 +3,34 @@ $(()=> {//ページ読み込み時の処理
   const url = "http://localhost:3000/restaurants"
   $.getJSON(url).done( (json) => {
     console.log(json);
-    for(let i in json){
-      let h = '<li>'
-            + '<a href="menu.html?id='+i+'">'
-            + json[i].r_name
-            + '</li>'
-            + '</a>'
-            + '<li>'
-            + json[i].genre
-            + '</li>';
+    for(let i = 0 ; i < 3 ; i++){
+      // console.log(i)
+      let h = `<div class="store1">
+                <li>
+                  <a href="http://www.inatatsu.com/AlleReduce/menu.html?id=${i}">
+                  <img src="../img/restaurants/${i+1}.png">
+                  </a>
+                  <h3>${json[i].r_name}</h3>
+                </li>
+              </div>
+                  `
 
-      $("ul#wrap").append(h);
+      $(".store2").append(h);
     }
+    for(let i = 3 ; i < 5 ; i++){
+      // console.log(i)
+      let h = `<div class="store1">
+                <li>
+                  <a href="http://www.inatatsu.com/AlleReduce/menu.html?id=${i}">
+                  <img src="../img/restaurants/${i+1}.png">
+                  </a>
+                  <h3>${json[i].r_name}</h3>
+                </li>
+              </div>
+                  `
+
+      $(".store3").append(h);
+    }
+
   })
 });
