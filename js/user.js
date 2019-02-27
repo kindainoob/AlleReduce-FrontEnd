@@ -1,42 +1,112 @@
 $(() => {
   const url = "http://localhost:3000/users"
   $.getJSON(url).done((json) => {
-    let data = `<p>${json.u_name}</p>`
+    $("#namae").append(json.u_name);
+    $("#seibetu").append(json.sex);
+    $("#nenrei").append(json.age);
+
+    let data = `<ul class="allergyID">
+                  <div class="allergy2">`
     if(json.allergy.match(/egg/)){
-      data += '<p style="color:red">卵</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/egg.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }else{
-      data += '<p>卵</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/egg1.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }
     if(json.allergy.match(/milk/)){
-      data += '<p style="color:red">乳</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/milk.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }else{
-      data += '<p>乳</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/milk1.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }
     if(json.allergy.match(/flour/)){
-      data += '<p style="color:red">小麦</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/flour.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }else{
-      data += '<p>小麦</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/flour1.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }
     if(json.allergy.match(/crab/)){
-      data += '<p style="color:red">かに</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/crab.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }else{
-      data += '<p>かに</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/crab1.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }
+
+    data += `</div>
+              <div class="allergy3">`
+
     if(json.allergy.match(/shrimp/)){
-      data += '<p style="color:red">えび</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/shrimp.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }else{
-      data += '<p>えび</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/shrimp1.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }
     if(json.allergy.match(/soba/)){
-      data += '<p style="color:red">そば</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/soba.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }else{
-      data += '<p>そば</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/soba1.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }
     if(json.allergy.match(/peanuts/)){
-      data += '<p style="color:red">落花生</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/peanuts.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }else{
-      data += '<p>落花生</p>'
+      data += `<div class="allergy1">
+                <li>
+                  <img src="../img/menus/peanuts1.png" alt="たまご" class="allergyname">
+                </li>
+              </div>`
     }
-    $("div#user_name").append(data);
+    data += `</div>
+        </ul>`
+
+    $(".allergy").append(data);
+
+
   })
 });

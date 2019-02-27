@@ -113,3 +113,7 @@ div#footer {
    text-align:center;				/*センタリング*/
    color:#333333;				/*文字色*/
 }
+
+.tw { /* text-white*/
+  color: white;
+}

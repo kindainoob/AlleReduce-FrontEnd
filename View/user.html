@@ -5,7 +5,7 @@
     <title>AlleReduce</title>
     <!-- css -->
     <link rel="stylesheet" href="../css/user.css">
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
@@ -18,9 +18,32 @@
     <script type="text/javascript" src="../js/user.js"></script>
   </head>
   <body>
-  <h1>ユーザープロフィール</h1>
+    <div id="pagebody">
+      <!-- ヘッダ -->
+      <div id="header">
+        <!-- （左カラム） -->
+        <div id="menu">
+          <li><a href="Home.html"> HOME </a></li>
+          <li><a href="Store.html"> SHOW </a></li>
+        </div>
 
-  <div id="user_name"></div>
+        <!-- （右カラム） -->
+        <div id="info">
+          <ul>
+            <li><a href="Profile.html"> お知らせ </a></li>
+            <li><a href="Profile.html"> PROFILE </a></li>
+          </ul>
+        </div>
+      </div>
 
+      <div id="main">
+        <h1 id="namae" class="tw"></h1>
+        <h2>該当アレルギー</h2>
+        <!-- <h2>該当アレルギー 一覧</h2> -->
+        <div class="allergy"></div>
+      </div>
+
+
+    </div>
   </body>
 </html>
