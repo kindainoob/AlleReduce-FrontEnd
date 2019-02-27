@@ -8,7 +8,7 @@ $(()=> {//ページ読み込み時の処理
       let h = `<div class="store1">
                 <li>
                   <a href="http://www.inatatsu.com/AlleReduce/menu.html?id=${i}">
-                  <img src="../img/restaurants/${i+1}.png">
+                  <img src="./img/restaurants/${i+1}.png">
                   </a>
                   <h3>${json[i].r_name}</h3>
                 </li>
@@ -22,7 +22,7 @@ $(()=> {//ページ読み込み時の処理
       let h = `<div class="store1">
                 <li>
                   <a href="http://www.inatatsu.com/AlleReduce/menu.html?id=${i}">
-                  <img src="../img/restaurants/${i+1}.png">
+                  <img src="./img/restaurants/${i+1}.png">
                   </a>
                   <h3>${json[i].r_name}</h3>
                 </li>
