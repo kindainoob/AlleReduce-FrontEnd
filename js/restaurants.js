@@ -15,9 +15,5 @@ $(()=> {//ページ読み込み時の処理
 
       $("ul#wrap").append(h);
     }
-  }).fail( () => {
-    console.log("失敗");
-  }).always( () => {
-    console.log("実行")
   })
 });

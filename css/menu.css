@@ -1,26 +1,52 @@
-.icon {
-  /* margin-top: :0px; */
-  margin: 10px 50px;
-  /* padding-right: 80px; */
+.tw { /* text-white*/
+  color: white;
+}
+.bb { /* background black*/
+  background-color: black;
+  opacity: 0.25;
 }
 
-.headtext {
-  font-size: 40px;
-  padding: 0px 100px;
+/*============================================
+メイン
+============================================*/
+h2{
+  color:#ffffff;				/*文字色を濃いめのグレーにする*/
+  text-align:center;				/*テキストをセンター揃えにする*/
 }
-
-.name {
-  font-size: 40px;
-  padding-left: 240px;
-  padding-right: 100px;
+h3{
+  font-size:8px;				/*フォントのサイズ*/
+  color:#ffffff;				/*文字色*/
 }
-
-.board {
-  height:1000px;
-  border-radius: 20px;
-  background-color: #fcacac;
+div#infomation{
+  width:1000px; height:50px;
+  margin:0px 0px 50px 0px;
 }
-
-.mainname {
-  padding: 50px;
+/*======================================
+(左カラム)
+======================================*/
+div.left{
+   width:500px;	height:20px;			/*幅の指定*/
+   list-style-type:none;			/*リストマーカー無しにする*/
+   display:inline;				/*リスト項目をインライン(横並び)表示にする*/
+   float:left;					/*サブメニューのカラムを左寄せにする*/
+   padding:10px 100px 10px 0px;			/*上パディング（内側余白）*/
+}
+h3{
+  font-size:8px;				/*フォントのサイズ*/
+  color:#ffffff;				/*文字色*/
+}
+/*======================================
+(右カラム)
+======================================*/
+div.right{
+   width:700px; height:20px;			/*幅の指定*/
+   list-style-type:none;			/*リストマーカー無しにする*/
+   display:inline;				/*リスト項目をインライン(横並び)表示にする*/
+   float:left;					/*サブメニューのカラムを左寄せにする*/
+   padding:10px 0px 10px 100px;			/*上パディング（内側余白）*/
+}
+h3{
+  text-align:left;
+  font-size:8px;				/*フォントのサイズ*/
+  color:#ffffff;				/*文字色*/
 }

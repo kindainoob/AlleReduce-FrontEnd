@@ -5,6 +5,7 @@
     <title>AlleReduce</title>
     <!-- css -->
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
@@ -16,18 +17,67 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- javascript -->
     <script type="text/javascript" src="../js/menu.js"></script>
+    <!-- YahooMapsAPI -->
+    <script type="text/javascript" charset="utf-8" src="https://map.yahooapis.jp/js/V1/jsapi?appid=dj00aiZpPTE2YlhwM2lycEc0TiZzPWNvbnN1bWVyc2VjcmV0Jng9NWQ-"></script>
+    <!-- geocoderApi -->
+
+
+
   </head>
   <body>
-    <header>
-      <i class="fa fa-home fa-3x icon"></i>
-      <span class="headtext">SHOW</span>
-      <span class="headtext">MAP</span>
+    <!-- ヘッダ -->
+    <div id="header">
+      <!-- （左カラム） -->
+      <div id="menu">
+        <ul>
+          <li><a href="Home.html"> HOME </a></li>
+          <li><a href="Store.html"> SHOW </a></li>
+        </ul>
+      </div>
 
-      <span class="name">UserName 様</span>
-      <i class="fa fa-user fa-3x icon"></i>
-      <i class="fa fa-bell fa-3x icon"></i>
-    </header>
+      <!-- （右カラム） -->
+      <div id="info">
+        <ul>
+          <li><a href="Infomation.html"> お知らせ </a></li>
+          <li><a href="Profile.html"> PROFILE </a></li>
+        </ul>
+      </div>
+    </div>
 
-    <ul id="wrap"></ul>
+    <div id="pagebody">
+      <div id="main">
+        <div id="information">
+          <h3 class="left name"></h3>
+          <h3 class="right addr"></h3>
+        </div>
+
+        <table class="tw">
+          <thead>
+            <tr>
+                <th>メニュー名</th>
+                <th>金額</th>
+                <th>卵</th>
+                <th>小麦</th>
+                <th>乳</th>
+                <th>えび</th>
+                <th>かに</th>
+                <th>そば</th>
+                <th>落花生</th>
+              </tr>
+          </thead>
+          <tbody id="tbody-wrap">
+          </tbody>
+        </table>
+        <h3>地図</h3>
+        <div id="map" style="width:400px; height:300px;"></div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- フッタ -->
+    <!-- <div id="footer"><small>Copyright コーンスネーク All Rights reserved. </small></div> -->
   </body>
 </html>
