@@ -1,6 +1,6 @@
 $(()=> {//ページ読み込み時の処理
   // alert('helloworld')
-  const url = "http://localhost:3000/restaurants"
+  const url = "msmaguro.net:3000/restaurants"
   $.getJSON(url).done( (json) => {
     console.log(json);
     for(let i = 0 ; i < 3 ; i++){

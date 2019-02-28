@@ -1,5 +1,5 @@
 $(() => {
-  const url = "http://localhost:3000/users"
+  const url = "msmaguro.net:3000/users"
   $.getJSON(url).done((json) => {
     $("#namae").append(json.u_name);
     $("#seibetu").append(json.sex);

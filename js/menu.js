@@ -7,7 +7,7 @@ $(() => {//ページ読み込み時の処理
   // let req = "";
   // let latlon;
 
-  const url = "http://localhost:3000/restaurants/" + id
+  const url = "msmaguro.net:3000/restaurants/" + id
   // const url = "http://inatatsu.com/AlleReduce/restaurants/" + id
   $.getJSON(url).done( (j) => {
     json = j;
